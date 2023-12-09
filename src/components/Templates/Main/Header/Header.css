@@ -1,0 +1,87 @@
+.reservations::after{
+    content: "reservations";
+    margin-left: 2px;
+}
+.nav-login{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 3px;
+    /* margin-top: 3px; */
+}
+.reservation{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-login input,
+.nav-login #log-btn{
+    border: 2px solid black;
+    outline: none;
+    padding: 5px;
+    font-family: Courier, monospace;
+}
+.nav-login #log-btn{
+    background-color: black;
+    color: white;
+}
+.nav-login #log-btn a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-header{
+    background-color: black;
+    width: 100%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Courier, monospace;
+    font-size: 1.1rem;
+    padding: 15px;
+
+}
+.navbar-header a img{
+    height: 5rem;
+}
+.nav-liste li{
+    padding: 15px 0;
+}
+.nav-liste li a{
+    margin: 10px;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nav-liste li::after{
+    content: "|";
+    margin-left: 5px;
+}
+.nav-liste li:last-child::after{
+    content: "";
+}
+
+.nav-liste {
+    /* margin-top: 22px; */
+    align-items: center
+}
+.nav-liste:last-child button{
+    background-color: rgb(120, 99, 90);
+    color: white;
+    outline: none;
+    border: none;
+    height: 100%;
+    padding: 13px;
+}
+
+.navbar-header img{
+    height: 100px;
+    cursor: pointer;
+}
+
+

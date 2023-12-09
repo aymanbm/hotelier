@@ -1,0 +1,82 @@
+.nav .Recherche-form{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: ai;
+    padding: 0 1.3rem;
+    position: absolute;
+    left: 7rem;
+    top: 27rem;
+    width: 170vw;
+    background: transparent;
+}
+
+.background{
+    position: relative;
+    background: rgb(0, 0, 0);
+    width: 170vh;
+    height: 80px;
+    opacity: 0.6;
+}
+.NavRecherche{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    text-align: center;
+    top: 0.7rem;
+    left: 0rem;
+
+}
+.NavRecherche div{
+    margin: 0 2.7rem;
+}
+.Recherche-form input,button{
+    border: none;
+}
+.Recherche-form button{
+    background: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+.Adultes button,
+.Enfants button{
+    margin: 0 7px;
+    background: white;
+    color: black;
+    font-weight: 900;
+    /* font-size: 0rem; */
+}
+.Adultes button:hover,
+.Enfants button:hover{
+    /* background-color: transparent!important; */
+    /* background: white; */
+    border: white;
+    color: rgb(255, 255, 255) !important;
+    transition: 0.3s ease-in;
+}
+.date{
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: white;    
+    color-scheme: dark;
+}
+
+
+.btn-recherche button{
+    font-family:ai;
+    margin-top: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    padding:9px 18px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    color: black;
+}
+.btn-recherche button:hover{
+    background-color: white!important;
+    color: black;
+    transition: 0.3s ease-in;
+    /* font-size: 1.1rem; */
+    /* padding-bottom: 10px; */
+}

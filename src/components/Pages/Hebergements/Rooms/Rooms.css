@@ -1,0 +1,239 @@
+.Rooms{
+    margin-top: 7rem;
+}
+.room {
+    margin: 1rem 0;
+}
+.panier-first{
+    position: relative;
+}
+.panier{
+    font-size: 17px;
+    background: #f2f2f2;;
+    border: 1px solid #d7d7d7;
+    padding: 2rem !important;
+    border-radius: 5px;
+    /* height: 55vh; */
+    /* width: 110% !important; */
+    height: max-content;
+}
+
+.panier h4,
+.panier h5{
+    font-weight: 600;
+}
+.panier .time{
+    display: flex;
+}
+.panier .time span{
+    margin: 1rem;
+}
+.panier .time>span{
+    margin-left: 0 !important;
+}
+.panier p{
+    font-size: 1.2rem;
+}
+.panier .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rooms .rooms h3{
+    font-family: Georgia, serif!important;
+}
+
+.rooms .room{
+    border: 1px solid #d7d7d7;
+    padding: 1rem;
+}
+.rooms .room .bed-image img{
+    height: 21vh;
+    width: 17vw;
+    border-radius: 5px;
+} 
+
+.room .details h4,
+.room .details h6,
+.room .details h5,
+.room .details h3{
+    font-weight: 600;
+}
+
+.room .details2{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.room .details .detailRoom,
+.room .details2 .TarifDispo{
+    font-weight: 700;
+    border-bottom: 1.5px solid #267DA9;
+    display: inline-block;
+    padding-bottom: 1px;
+    font-family: sans-serif;
+}
+.room .details p{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.room .details p:hover>h5,
+.room .details2 .TarifDispo:hover{
+    color: #267DA9;
+    border-bottom: 3px solid #267DA9;
+
+}
+
+
+.details2 button {
+    padding: 0.75rem 1.25rem;
+    color: white;
+    background-color: rgba(229,83,2,1);
+    border-radius: 4px;
+}
+.details2 button strong{
+    font-family: 'Roboto', sans-serif;
+}
+
+.details2 .secondPart{
+    text-align: end;
+}
+.details2 .secondPart p:nth-of-type(1){
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.details2 .secondPart p:nth-of-type(2){
+    color: #999;
+    margin-top: -1rem;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkoutContainer .checkoutBlock{
+    margin: 1rem 0;
+}
+.checkoutBlock span{
+    margin: 0 0.42rem;
+}
+.checkoutContainer .checkoutBlock img{
+    width:6rem;
+    height:4rem;
+    border-radius: 4px;
+}
+
+.modal-content{
+    top: 2em !important;
+    width: 160% !important;
+    left: -7rem;
+    border-radius: 3px !important;
+}
+.fade.modal-backdrop.show{
+    opacity: 0.8 !important;
+}
+.modal-image img{
+    width: 22em !important;
+    border-radius: 8px;
+}
+.modal-image {
+    order: 2 !important;
+
+}
+
+.modal-body .div-close{
+    display: flex;
+    justify-content: end;
+    margin-top: -4rem;
+    margin-bottom: 2em;
+    margin-right: -0.4em !important;
+    color: #ffff !important;
+    /* background: black !important; */
+}
+.modal-body .div-close button{
+    background-color: transparent;
+    font-size: 2rem;
+    color: white !important;
+    font-weight: 100 !important;
+}
+.modal-body .modal-textarea{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em !important;
+}
+.modal-body .modal-textarea {
+    text-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.modal-body .modal-details ul li{
+    margin-bottom: 0.4em;
+}
+.modal-footer h4{
+    text-align: start;
+}
+
+@media only screen and (max-width: 991px) {
+    .panier {
+        position:unset !important;
+        width: 100% !important;
+    }
+    .rooms .room .bed-image img {
+        height: 25vh;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    .room .details2{
+        display: block;
+    }
+    .room .details2 button{
+        width: 100% !important;
+    }
+    .room .secondPart{
+        text-align: left;
+    }
+    .modal-content{
+        left: -9.5rem;
+    }
+}
+/* @media only screen and (max-width: 775px) {
+    .modal-content{
+        top: 3em !important;
+        width: 140% !important;
+        left: -6rem;
+    }
+    .modal-image img{
+        width: 19em !important;
+    }
+    .rooms .room .bed-image img {
+        height: 28vh;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+} */
+@media only screen and (max-width: 800px) {
+    .modal-content{
+        width: 100% !important;
+    left: 0rem;
+    }
+    .modal-image img{
+        width: 100% !important;
+        margin-bottom: 2em;
+    }
+    .modal-body .modal-textarea{
+        display: block;
+    }
+
+    .modal-body .modal-textarea {
+        text-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+        font-size: 13px !important;
+    }
+
+
+}
