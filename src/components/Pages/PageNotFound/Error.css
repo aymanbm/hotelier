@@ -2,8 +2,9 @@
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    height: 60vh;
-    width: 60vw;
+    margin-top: 3rem;
+    height: 18.6rem;
+    width: 35rem;
 }
 .page404{
     display: flex;
@@ -25,4 +26,14 @@
     width: 16rem;
     color: black;
     transition: 0.3s ease-in;
+}
+
+@media only screen and (max-width: 992px) {
+    .img404 img{
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7rem;
+        width: 35rem;
+    }
 }

@@ -18,11 +18,11 @@ import { Helmet } from "react-helmet-async";
 function Header() {
     const route = createBrowserRouter([
         {
-        path : "/",
+        path : "/hotelier",
         element : <Pages/>,
         children : [
             {
-                path:"/",
+                path:"/hotelier",
                 element:<Accueil/>
             },
             {
