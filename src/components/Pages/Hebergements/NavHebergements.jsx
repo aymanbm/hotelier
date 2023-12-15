@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Hebergements.css";
+// import "./Hebergements.css";
 function NavHebergement(props) {
     const storedData = JSON.parse(localStorage.getItem("Data"));
     const [dates, setDates] = useState({
@@ -98,7 +98,7 @@ return (
                     className="date"
                     value={dates.arrive}
                 />
-                <div>Arrivé</div>
+                <p>Arrivé</p>
                 </div>
                 <div className="Depart">
                 <input
@@ -108,7 +108,7 @@ return (
                     onChange={handleChange}
                     value={dates.depart}
                 />
-                <div>Départ</div>
+                <p>Départ</p>
                 </div>
                 <div className="Adultes">
                 <button className="btn" name="a_moin" onClick={handleClick}>
@@ -118,7 +118,7 @@ return (
                 <button className="btn" name="a_plus" onClick={handleClick}>
                     +
                 </button>
-                <div>Adulte(s)</div>
+                <p>Adulte(s)</p>
                 </div>
                 <div className="Enfants">
                 <button className="btn" name="e_moin" onClick={handleClick}>
@@ -128,7 +128,7 @@ return (
                 <button className="btn" name="e_plus" onClick={handleClick}>
                     +
                 </button>
-                <div>Enfant(s)</div>
+                <p>Enfant(s)</p>
                 </div>
                 <div className="btn-recherche">
                 <Link to={"/Hébergements"}>

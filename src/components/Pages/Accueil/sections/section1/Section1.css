@@ -2,24 +2,24 @@
     position: relative;
 }
 .section-img img{
-    background-size: cover; 
-    /* height:79.5vh;  */
-    height: 100%;
+    min-height: 87.5vh !important;
     width: 100%;
+    animation: zoom 20s ease-in infinite;
 }
-
-/* .carousel{
-    width: 100%;
+/* .carousel-item{
+    overflow: hidden;
 } */
-.carousel-item{
-    width: 100vw !important;
-    height: 79.5vh !important;
-}
 .carousel-control-prev,
 .carousel-control-next{
     width:5% !important;
 }
 
 .carousel-indicators{
-    /* bottom: 11rem !important; */
+    right: -4.5rem !important;    
+}
+
+@keyframes zoom {
+    0%{transform: scale(1);}
+    100%{transform: scale(2) translate(30px);}
+
 }

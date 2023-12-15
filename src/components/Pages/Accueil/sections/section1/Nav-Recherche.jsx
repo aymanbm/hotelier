@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Nav-Recherche.css"
+// import "./Nav-Recherche.css"
 import { Link } from "react-router-dom";
 
 function NavRecherche() {
@@ -92,23 +92,23 @@ function NavRecherche() {
             <div className="NavRecherche">
                 <div className="Arrive">
                     <input type="date" onChange={handleChange} name="arrive" className="date" value={dates.arrive} />
-                    <div>Arrivé</div>
+                    <p>Arrivé</p>
                 </div>
                 <div className="Depart"> 
                     <input type="date" className="date" name="depart" onChange={handleChange} value={dates.depart} />
-                    <div>Départ</div>
+                    <p>Départ</p>
                 </div>
                 <div className="Adultes"> 
                     <button className="btn" name="adultes_moin" onClick={handleClick}>-</button>
                     <span>{adultes}</span>
                     <button className="btn" name="adultes_plus" onClick={handleClick}>+</button>
-                    <div>Adulte(s)</div>
+                    <p>Adulte(s)</p>
                 </div>
                 <div className="Enfants"> 
                     <button className="btn" name="enfants_moin" onClick={handleClick}>-</button>
                     <span>{enfants}</span>
                     <button className="btn" name="enfants_plus" onClick={handleClick}>+</button>
-                    <div>Enfant(s)</div>
+                    <p>Enfant(s)</p>
                 </div>
                 <div className="btn-recherche"> 
                     <Link to={"/Hébergements"}><button className="btn" onClick={handleSubmit}>Rechercher</button></Link>

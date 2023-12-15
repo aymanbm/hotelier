@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import img from "../../../../assets/img/Bed.jpg"
 import { AiOutlineClose } from 'react-icons/ai';
+import { PanierLoadingContext } from "./Rooms";
+import Loading from "../../../../loading";
 
 function Panier(props) {
+    const {isPanierLoading, setIsPanierLoading} = useContext(PanierLoadingContext)
+
     const storedData = JSON.parse(localStorage.getItem("Data"));
     const storedCheckout = JSON.parse(localStorage.getItem("checkout"));
 
@@ -44,32 +48,38 @@ function Panier(props) {
                     </div>
         })
     }
+if(isPanierLoading){
+    return <div className="panier p-0 " style={props.panierStyle}>
+    <Loading style={{height:"30rem",borderRadius : "5px"}}
+        styleSVG={{position:"position-static",marginTop: "15rem",
+    marginLeft: "13rem",}} />
+    </div>
+
+}else{
     return ( 
         <div className="panier" style={props.panierStyle}>
-            <h4>Votre séjour</h4>
-            <div className="time">
-                <span>
-                    <h5>Arrivée</h5>
-                    <p>Aprés 15:00</p>
-                </span>
-                <span>
-                    <h5>Départ</h5>
-                    <p>Avant 12:00</p>
-                </span>
-            </div>
-            <p>{dayStringArrive}. {dateStringArrive.getDate()} {MonthStringArrive}. {dateStringArrive.getFullYear()} - {dayStringDepart}. {dateStringDepart.getDate()} {MonthStringDepart}. {dateStringDepart.getFullYear()}</p>
-            <p>{storedData.adultes} {storedData.adultes==1?"adulte":"adultes"}  {storedData.enfants} {storedData.enfants==1?"enfant":"enfants"}</p>
-            <div className="checkoutContainer">{handleCheckout()}</div>
-            <hr/>
-            <div className="total">
-                <h4>Total:</h4>
-                <h4>{total} MAD</h4>
+                <h4>Votre séjour</h4>
+                <div className="time">
+                    <span>
+                        <h5>Arrivée</h5>
+                        <p>Aprés 15:00</p>
+                    </span>
+                    <span>
+                        <h5>Départ</h5>
+                        <p>Avant 12:00</p>
+                    </span>
+                </div>
+                <p>{dayStringArrive}. {dateStringArrive.getDate()} {MonthStringArrive}. {dateStringArrive.getFullYear()} - {dayStringDepart}. {dateStringDepart.getDate()} {MonthStringDepart}. {dateStringDepart.getFullYear()}</p>
+                <p>{storedData.adultes} {storedData.adultes==1?"adulte":"adultes"}  {storedData.enfants} {storedData.enfants==1?"enfant":"enfants"}</p>
+                <div className="checkoutContainer">{handleCheckout()}</div>
+                <hr/>
+                <div className="total">
+                    <h4>Total:</h4>
+                    <h4>{total} MAD</h4>
 
+                </div>
             </div>
-            
-
-        </div>
     );
 }
-
+}
 export default Panier;

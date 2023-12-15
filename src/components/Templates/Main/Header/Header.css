@@ -1,21 +1,21 @@
-.reservations::after{
+/* .reservations::after{
     content: "reservations";
     margin-left: 2px;
-}
-.nav-login{
+} */
+/* .nav-login{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: end;
     width: 100%;
     padding: 3px;
-    /* margin-top: 3px; */
-}
-.reservation{
+} */
+
+/* .reservation{
     cursor: pointer;
     margin-right: 10px;
-}
+} */
 
-.nav-login input,
+/* .nav-login input,
 .nav-login #log-btn{
     border: 2px solid black;
     outline: none;
@@ -30,8 +30,15 @@
     background-color: black;
     color: white;
     text-decoration: none;
+} */
+header{
+    margin:0;
+    padding:0;
 }
-
+.navbar{
+    padding:0;
+    margin:0;
+}
 .nav-header{
     background-color: black;
     width: 100%;
@@ -41,47 +48,67 @@
     justify-content: space-between;
     font-family: Courier, monospace;
     font-size: 1.1rem;
-    padding: 15px;
-
+    padding: 0.3rem;
+}
+.navbar-toggler{
+    background:#fff ;
+    margin-right:1.2rem;
+}
+.navbar-header{
+    flex-grow : 9999;
 }
 .navbar-header a img{
-    height: 5rem;
+    height: 4rem;
+    cursor: pointer;
+
 }
-.nav-liste li{
-    padding: 15px 0;
+.nav-liste a{
+    padding: 0.3rem 0;
 }
-.nav-liste li a{
+.nav-liste  a{
     margin: 10px;
     height: 100%;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white !important;
     cursor: pointer;
 }
 
-.nav-liste li::after{
+.nav-liste a::after{
     content: "|";
     margin-left: 5px;
 }
-.nav-liste li:last-child::after{
+.nav-liste a:last-child::after{
     content: "";
 }
 
 .nav-liste {
     /* margin-top: 22px; */
-    align-items: center
+    align-items: center;
+    flex-wrap : "wrap"
 }
 .nav-liste:last-child button{
     background-color: rgb(120, 99, 90);
     color: white;
     outline: none;
     border: none;
-    height: 100%;
-    padding: 13px;
-}
-
-.navbar-header img{
-    height: 100px;
-    cursor: pointer;
+    padding: 0.8rem;
 }
 
 
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        align-items: flex-start !important;
+
+    }
+    .navbar-nav a{
+        align-items: center !important;
+    }
+
+    .nav-liste a::after{
+        content: "";
+    }
+    .nav-liste:last-child button{
+        margin-left: -0.7rem;
+    }
+}

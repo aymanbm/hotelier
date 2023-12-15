@@ -1,10 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import img from "../../../assets/img/error404.jpg"
-import './Error.css'
 import { Link } from "react-router-dom"
 
 function PageNotFound() {
     return ( 
         <div className="page404">
+            <Helmet>
+                <title>404</title>
+                <meta name='description' content='Erro-page'/> 
+                <link rel="stylesheet" href="/src/components/Pages/PageNotFound/Error.css" />
+
+            </Helmet>
             <div className="img404">
                 <img src={img} alt="error404"/>
             </div>

@@ -11,11 +11,10 @@
     font-size: 17px;
     background: #f2f2f2;;
     border: 1px solid #d7d7d7;
-    padding: 2rem !important;
+    padding: 2rem ;
     border-radius: 5px;
-    /* height: 55vh; */
-    /* width: 110% !important; */
     height: max-content;
+    flex-grow: 1;
 }
 
 .panier h4,
@@ -43,15 +42,21 @@
     font-family: Georgia, serif!important;
 }
 
+.rooms {
+    flex-grow: 9999;
+    width: min-content;
+}
 .rooms .room{
     border: 1px solid #d7d7d7;
     padding: 1rem;
 }
+
 .rooms .room .bed-image img{
     height: 21vh;
     width: 17vw;
     border-radius: 5px;
 } 
+
 
 .room .details h4,
 .room .details h6,
@@ -73,12 +78,12 @@
     padding-bottom: 1px;
     font-family: sans-serif;
 }
-.room .details p{
+.room .details h5{
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
-.room .details p:hover>h5,
+.room .details h5:hover,
 .room .details2 .TarifDispo:hover{
     color: #267DA9;
     border-bottom: 3px solid #267DA9;
@@ -142,7 +147,7 @@
 
 .modal-body .div-close{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: -4rem;
     margin-bottom: 2em;
     margin-right: -0.4em !important;
@@ -171,9 +176,15 @@
     text-align: start;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1050px) {
+    /* .Rooms .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    } */
     .panier {
-        position:unset !important;
+        position:static !important;
         width: 100% !important;
     }
     .rooms .room .bed-image img {
@@ -195,22 +206,8 @@
         left: -9.5rem;
     }
 }
-/* @media only screen and (max-width: 775px) {
-    .modal-content{
-        top: 3em !important;
-        width: 140% !important;
-        left: -6rem;
-    }
-    .modal-image img{
-        width: 19em !important;
-    }
-    .rooms .room .bed-image img {
-        height: 28vh;
-        width: 100%;
-        margin-bottom: 1rem;
-        border-radius: 5px;
-    }
-} */
+
+
 @media only screen and (max-width: 800px) {
     .modal-content{
         width: 100% !important;
@@ -235,5 +232,21 @@
         font-size: 13px !important;
     }
 
+    .rooms .room .bed-image img{
+        /* height: 100% !important; */
+        /* width: 100% !important; */
+        border-radius: 5px;
+    } 
 
 }
+@media only screen and (max-width: 450px) {
+    /* body{
+        font-size: 14px !important;
+    } */
+    .rooms .room .bed-image img{
+        width: 100% !important;
+    }
+}
+
+
+

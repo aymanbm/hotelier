@@ -1,34 +1,35 @@
 .nav .Recherche-form{
-    position: relative;
     color: rgb(255, 255, 255);
     font-family: ai;
-    padding: 0 1.3rem;
+    padding: 0 1.3em;
     position: absolute;
-    left: 7rem;
-    top: 27rem;
-    width: 170vw;
+    top: 70vh;
     background: transparent;
+    text-align: center;
+    font-size:1.3vw;
 }
 
-.background{
-    position: relative;
+.nav .background{
+    position:relative;
     background: rgb(0, 0, 0);
-    width: 170vh;
-    height: 80px;
+    width: 82vw;
+    left:  5em;
+    height:    4.1em;
     opacity: 0.6;
 }
 .NavRecherche{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    font-size: 1.3rem;
+    font-size:1.3vw;
     text-align: center;
-    top: 0.7rem;
-    left: 0rem;
+    top: 0.7em;
+    left: 5em;
+    width: 100%;
 
 }
 .NavRecherche div{
-    margin: 0 2.7rem;
+    margin: 0 2.5em;
 }
 .Recherche-form input,button{
     border: none;
@@ -41,10 +42,12 @@
 
 .Adultes button,
 .Enfants button{
-    margin: 0 7px;
+    margin: 0 0.5em;
     background: white;
     color: black;
     font-weight: 900;
+    padding: 0.3em 0.7em;
+    font-size: 0.8em;
     /* font-size: 0rem; */
 }
 .Adultes button:hover,
@@ -66,10 +69,10 @@
 
 .btn-recherche button{
     font-family:ai;
-    margin-top: 0.3rem;
+    margin-top: 0.11em;
     background-color: rgb(255, 255, 255);
-    padding:9px 18px;
-    font-size: 1.2rem;
+    padding:0.4em 1.1em;
+    font-size: 1em;
     border-radius: 7px;
     color: black;
 }
@@ -79,4 +82,11 @@
     transition: 0.3s ease-in;
     /* font-size: 1.1rem; */
     /* padding-bottom: 10px; */
+}
+@media only screen and (max-width : 450px){
+    .nav .Recherche-form,
+    .nav .background{
+        display: none;
+    }
+
 }
